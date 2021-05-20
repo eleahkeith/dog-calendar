@@ -1,3 +1,8 @@
+header images created by Sandy @ craftfor.com. See Sandy's portfolio at https://crafttor.com/search?category=11
+background texture URL: https://www.transparenttextures.com/patterns/climpek.png
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

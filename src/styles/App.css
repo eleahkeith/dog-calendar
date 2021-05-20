@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap");
+
+
+
+
+.background-image {
+  position: absolute;
+  opacity: 0.1;
+  height: 80%;
+  width: auto;
+  right: 10%;
+  top: 10%;
+  z-index: -1;
+}
+
+body {
+  background: #e3dad1 url('../images/climpek.png');
+  display: flex;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.calendar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 65vw;
+}
+
+/* header */
+.header {
+  display: flex;
+  width: 65%;
+  height: 5em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(159, 140, 125, 1);
+}
+
+.header-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+
+h1, h2 {
+  width: 100%;
+}
+
+h1 {
+  font-family: "dm serif display";
+  color: #32573b;
+  font-size: 2.5em;
+  padding: 10px 0px 0px 10px;
+}
+
+h2 {
+  font-family: "dm sans";
+  font-size: .9em;
+  font-weight: bold;
+  color: #9f8c7d;
+  padding: 5px 0px 20px 10px;
+}
+
+.header-image-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100%;
+  width: 50%;
+}
+
+.header-image {
+  height: 90%;
+}
+
+/* month & */
+.month-year {
+  font-family: "DM sans";
+  color: #9f8c7d;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  height: 2.5em;
+  flex: 1 1 auto;
+}
+
+.month {
+  font-size: 1.75em;
+  text-align: center;
+  padding: 0 5% 0 5%;
+}
+
+.arrow {
+  position: relative;
+  height: 30%;
+  width: auto;
+  top: 25%;
+}
+
+/* weekday names */
+.days {
+  display: flex;
+  justify-content: space-around;
+}
+
+.day-names {
+  display: flex;
+  height: 1em;
+  width: 100%;
+  color: #b6a89b;
+}
+
+.single-day-name {
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+/* date cells */
+.date-grid {
+  width: 100%;
+}
+
+.row {
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  height: auto;
+}
+
+.cells {
+  font-family: "DM sans";
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  justify-content: space-around;
+}
+
+.date-normal {
+  display: flex;
+  background-color: rgba(159, 140, 125, 0.3);
+  position: relative;
+  width: calc(100% / 7);
+  padding-bottom: 5%;
+  border: 1px solid rgba(159, 140, 125, 1);
+  border-radius: 12px;
+  color: #9f8c7d;
+  margin: 5px 7px 5px 7px;
+  transition-property: margin;
+  transition-duration: 0.15s;
+}
+
+.date-normal:hover {
+  margin: 2px 7px 8px 7px;
+  background: rgba(197, 168, 150, 0.3);
+}
+
+.date-disabled {
+  color: rgba(159, 140, 125, 0.75);
+  background-color: rgba(255, 255, 255, 0.15);
+
+  border: 1px solid rgba(159, 140, 125, 0.75);
+}
+
+.date-disabled:hover {
+  background: rgba(159, 140, 125, 0.1)
+}
+
+.date-selected {
+  background-color: rgba(50, 87, 59, 0.2) !important;
+  color: #32573b;
+  border-color: rgba(50, 87, 59, 1);
+}
+
+.number {
+  padding: 7.5%;
+}
+
+.pawprint-normal {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  width: 25%;
+}
+
+.pawprint-invisible {
+  display: none;
+}
+
+/* form */
+
+.form {
+  display: flex;
+}
+
+form {
+  display: flex;
+  font-family: "DM sans";
+  font-weight: bold;
+  color: #9f8c7d;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 30vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
+  border: 2px solid #9f8c7d;
+  border-radius: 12px;
+}
+
+.sub-header {
+  font-size: 1.25em;
+  width: 100%;
+  text-align: center;
+  color: #9f8c7d;
+}
+
+.form-label {
+  width: 30%;
+  font-size: 0.8em;
+}
+
+.form-input,
+.form-input-box, 
+.existing-walk-input, 
+.existing-input-box, 
+select {
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  font-family: "dm sans";
+  font-weight: bold;
+  color: #9f8c7d;
+  font-size: 0.8em;
+  width: 60%;
+  height: 5%;
+  border: 1px solid #9f8c7d;
+  border-radius: 5px;
+  background-color: rgba(159, 140, 125, 0.15);
+  padding-left: 5px;
+}
+
+.form-input-box, .existing-input-box {
+  height: 3em;
+  color: #9f8c7d;
+  border-radius: 5px;
+}
+
+.existing-walk-input, .existing-input-box {
+  padding-top: 5px;
+}
+
+
+
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "dm sans";
+  font-weight: bolder;
+  height: 2em;
+  background-color: rgba(197, 168, 150, 1);
+  color: #e3dad1;
+  border: 1px solid #9f8c7d;
+  border-radius: 5px;
+}
+
+
+
+footer {
+  position: absolute;
+  bottom: -125px;
+  font-family: "dm sans";
+  font-size: .8em;
+  color: #9f8c7d;
+  margin-top: 10px;
+}
+
+a {
+  color: #32573b;
+text-decoration: none;
+}
+
+/* existing walk data */
+
+.walk-card {
+  margin: 1em;
+  padding-top: 5em;
+  display: flex;
+  width: 30vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.walk-list {
+  width: 30vw;
+}
+
+.walk-attribute {
+  display: flex;
+  width: 100%;
+  height: 2em;
+}
+
+/* media queries */
+@media only screen and (max-width: 800px) {
+  body {
+    height: 100vh;
+  }
+
+  .header {
+    width: 90%;
+  }
+
+  .header-text-container {
+    width: 60%;
+  }
+
+  h1, h2 {
+    width: 100%;
+  }
+
+  .background-image {
+    display: none;
+  }
+
+  .app {
+    display: block;
+    margin-left: 1.5%;
+    height: 100vh;
+  }
+
+  .month-year {
+    height: 3.5em;
+  }
+
+  .month {
+    font-size: 2em;
+  }
+
+  .calendar {
+    width: 95vw;
+    align-items: flex-start;
+    margin-bottom: 2.5%;
+  }
+
+  .cells {
+    width: 95vw;
+  }
+
+  .date-normal {
+    padding-bottom: 4.5%;
+    margin: 3px;
+    transition-property: none;
+    border-radius: 10px;
+  }
+
+  .date-normal:hover {
+    margin: 1px 3px 5px 3px;
+  }
+
+  .pawprint-normal {
+    width: 30%;
+  }
+
+  form,
+  .walk-card {
+    justify-content: space-around;
+    margin: 0;
+    width: 50vw;
+  }
+
+  .form {
+    justify-content: space-around;
+    height: 40%;
+  }
+
+  .walk-card {
+    justify-content: space-around;
+  }
+
+  .form-label {
+    width: 30%;
+  }
+
+  .form-input, .existing-walk-input {
+    width: 50%;
+    height: 2em;
+  }
+
+  .form-input-box, .existing-input-box {
+    width: 50%;
+  }
+
+  .button {
+    margin: 2px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #phone {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .header-text-container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.75em;
+  }
+
+  h2 {
+    display: none;
+  }
+
+
+  .month-year {
+    font-size: .85em;
+  }
+
+  form,
+  .walk-card {
+    justify-content: space-around;
+    margin: 0;
+    width: 70vw;
+  }
+
+  .pawprint-normal {
+    width: 40%;
+  }
+}

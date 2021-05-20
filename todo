@@ -1,0 +1,35 @@
+--to do before applying--
+[ ]meta tags
+
+
+--js--
+[ ]add comments
+[ ]clean up class names
+
+
+
+
+--CSS--
+[ ]make record walk and walk details look more different
+
+
+--media breaks--
+[ ]how does it look when phone rotates? check that
+
+--bugs--
+[ ]when you press enter inside the notes, you get an error message
+[x]walk length and walk notes on form are slightly wider than the rest
+[x]when you click on date, console log still shows prior date. 
+    - when this is fixed, should also be able to update to only use isEditing in conditional render
+
+
+
+--eventually--
+[ ]turn doesWalkExist into a hook
+[ ]create back end
+[ ]reporting data
+[ ]flesh out validation to create individual error states and messages
+[ ]make walk behavior more visible (different color pawprints, maybe different color backgrounds on walk days)
+[ ]add different functionality - dog mood, training sessions, play dates, hikes
+
+
