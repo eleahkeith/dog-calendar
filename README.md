@@ -2,7 +2,7 @@
 
 # Dog Walk Diary
 
-##Currently (updated 4/6/2021)
+## Currently (updated 4/6/2021)
 - moving walk information from local storage to full back end
 - planning new features
 - planning reporting functionality
