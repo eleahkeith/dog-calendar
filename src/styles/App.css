@@ -266,8 +266,8 @@ select {
   font-family: "dm sans";
   font-weight: bolder;
   height: 2em;
-  background-color: rgba(197, 168, 150, 1);
-  color: #e3dad1;
+  background-color: #9F8C7D;
+  color: #fff;
   border: 1px solid #9f8c7d;
   border-radius: 5px;
 }
