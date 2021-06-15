@@ -36,5 +36,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "## Currently (updated 4/6/2021) - moving walk information from local storage to full back end - planning new features - planning reporting functionality",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eleahkeith/dog-calendar.git"
+  },
+  "author": "Leah Keith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eleahkeith/dog-calendar/issues"
+  },
+  "homepage": "https://github.com/eleahkeith/dog-calendar#readme"
 }
