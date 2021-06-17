@@ -1,13 +1,6 @@
---to do before applying--
-[ ]meta tags
-
-
 --js--
 [ ]add comments
 [ ]clean up class names
-
-
-
 
 --CSS--
 [ ]make record walk and walk details look more different
@@ -18,10 +11,6 @@
 
 --bugs--
 [ ]when you press enter inside the notes, you get an error message
-[x]walk length and walk notes on form are slightly wider than the rest
-[x]when you click on date, console log still shows prior date. 
-    - when this is fixed, should also be able to update to only use isEditing in conditional render
-
 
 
 --eventually--

@@ -1,14 +1,5 @@
-import addMonths from "date-fns/addMonths";
-import subMonths from "date-fns/subMonths";
-import format from "date-fns/format";
-import startOfWeek from "date-fns/startOfWeek";
-import endOfWeek from "date-fns/endOfWeek";
-import addDays from "date-fns/addDays";
-import startOfMonth from "date-fns/startOfMonth";
-import endOfMonth from "date-fns/endOfMonth";
-import isSameDay from "date-fns/isSameDay";
-import isSameMonth from "date-fns/isSameMonth";
-import formatISO from "date-fns/formatISO";
+
+import {formatISO, addMonths, subMonths, format, startOfWeek, endOfWeek, addDays, startOfMonth, endOfMonth, isSameDay, isSameMonth} from "date-fns"
 
 import leftArrow from "../images/left-arrow.png";
 import rightArrow from "../images/right-arrow.png";
@@ -19,7 +10,6 @@ function Calendar(props) {
   function monthYear() {
     const dateFormat = "MMMM yyyy";
 
-    // might need to move this outside of header function later
     function nextMonth() {
       props.setCurrentDate(addMonths(props.currentDate, 1));
     }
@@ -27,7 +17,6 @@ function Calendar(props) {
     function prevMonth() {
       props.setCurrentDate(subMonths(props.currentDate, 1));
     }
-    // might need to move this outside of header function later
 
     return (
       <div className="month-year">
