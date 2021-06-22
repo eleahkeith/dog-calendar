@@ -47,13 +47,12 @@ function WalkCard(props) {
               key={props.onHasChanged}
               onClick={(e) => handleDelete(e)}
             />
-            <input
+            <button
               className="button"
               type="button"
-              value="Edit Walk"
               // key={props.onHasChanged}
               onClick={() => props.onEdit()}
-            />
+            >Edit Walk</button>
           </form>
         </div>
       ) : null}

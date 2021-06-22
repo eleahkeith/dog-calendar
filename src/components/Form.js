@@ -139,19 +139,17 @@ function Form(props) {
           onChange={(e) => setWalkNotes(e.target.value)}
         ></textarea>
         <br />
-        <input
+        <button
           className="button"
           type="button"
-          value="Record Walk"
           key={props.onHasChanged}
           onClick={(e) => handleSubmit(e)}
-        />
-        <input
+        >Record Walk</button>
+        <button
           className="button"
           type="button"
-          value="Reset Form"
           onClick={(e) => resetForm()}
-        />
+        >Reset Form</button>
       </form>
     </div>
   );
