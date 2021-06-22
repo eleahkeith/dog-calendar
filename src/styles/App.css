@@ -21,20 +21,20 @@ body {
   display: flex;
 }
 
-.app {
+main {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
 }
 
-.calendar {
+section.calendar {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 65vw;
 }
 
 /* header */
-.header {
+header {
   display: flex;
   width: 65%;
   height: 5em;
@@ -61,12 +61,19 @@ h1 {
   padding: 10px 0px 0px 10px;
 }
 
-h2 {
+h2.h2-header {
   font-family: "dm sans";
   font-size: .9em;
   font-weight: bold;
   color: #9f8c7d;
   padding: 5px 0px 20px 10px;
+}
+
+h2 {
+  font-size: 1.25em;
+  width: 100%;
+  text-align: center;
+  color: #9f8c7d;
 }
 
 .header-image-container {
@@ -81,7 +88,7 @@ h2 {
   height: 90%;
 }
 
-/* month & */
+/* month & year*/
 .month-year {
   font-family: "DM sans";
   color: #9f8c7d;
@@ -196,7 +203,7 @@ h2 {
 
 /* form */
 
-.form {
+section.form-container {
   display: flex;
 }
 
@@ -215,23 +222,18 @@ form {
   border-radius: 12px;
 }
 
-.sub-header {
-  font-size: 1.25em;
-  width: 100%;
-  text-align: center;
-  color: #9f8c7d;
-}
 
-.form-label {
+
+label, .form-label {
   width: 30%;
   font-size: 0.8em;
 }
 
-.form-input,
-.form-input-box, 
+input,
+textarea, 
+select, 
 .existing-walk-input, 
-.existing-input-box, 
-select {
+.existing-input-box {
   -ms-box-sizing:border-box;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
@@ -248,10 +250,8 @@ select {
   padding-left: 5px;
 }
 
-.form-input-box, .existing-input-box {
+textarea, .existing-input-box {
   height: 3em;
-  color: #9f8c7d;
-  border-radius: 5px;
 }
 
 .existing-walk-input, .existing-input-box {
@@ -260,7 +260,7 @@ select {
 
 
 
-.button {
+button {
   -webkit-appearance: none;
   -moz-appearance: none;
   font-family: "dm sans";
@@ -315,7 +315,7 @@ text-decoration: none;
     height: 100vh;
   }
 
-  .header {
+  header {
     width: 90%;
   }
 
@@ -331,7 +331,7 @@ text-decoration: none;
     display: none;
   }
 
-  .app {
+  main {
     display: block;
     margin-left: 1.5%;
     height: 100vh;
@@ -345,7 +345,7 @@ text-decoration: none;
     font-size: 2em;
   }
 
-  .calendar {
+  section.calendar {
     width: 95vw;
     align-items: flex-start;
     margin-bottom: 2.5%;
@@ -377,7 +377,7 @@ text-decoration: none;
     width: 50vw;
   }
 
-  .form {
+.form-container {
     justify-content: space-around;
     height: 40%;
   }
@@ -386,20 +386,20 @@ text-decoration: none;
     justify-content: space-around;
   }
 
-  .form-label {
+  label, .form-label {
     width: 30%;
   }
 
-  .form-input, .existing-walk-input {
+  input, select, textarea, .existing-walk-input, .existing-input-box {
     width: 50%;
     height: 2em;
   }
 
-  .form-input-box, .existing-input-box {
-    width: 50%;
+  textarea, .existing-input-box {
+    height: 3em;
   }
 
-  .button {
+  button {
     margin: 2px;
   }
 }
@@ -409,7 +409,7 @@ text-decoration: none;
     display: none;
   }
 
-  .header {
+  header {
     width: 100%;
   }
 
@@ -421,7 +421,7 @@ text-decoration: none;
     font-size: 1.75em;
   }
 
-  h2 {
+  h2.h2-header {
     display: none;
   }
 

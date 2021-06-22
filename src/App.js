@@ -55,7 +55,7 @@ function App() {
         alt="background pawprint"
         src={backgroundImage}
       />
-      <div className="app" key={hasChanged}>
+      <main key={hasChanged}>
         <Header className="header"></Header>
         <Calendar
           className="calendar"
@@ -90,7 +90,7 @@ function App() {
           ></WalkCard>
         )}
         <Footer></Footer>
-      </div>
+      </main>
     </>
   );
 }

@@ -5,10 +5,10 @@ import dogWalkSit from '../images/dog-walk-sit.png';
 function Header() {
 
     return (
-        <div className="header">
+        <header>
             <div className="header-text-container">
                 <h1>Dog Walk Diary</h1>
-                <h2>Track your dog's walks and behavior</h2>
+                <h2 className="h2-header">Track your dog's walks and behavior</h2>
             </div>
             <div className="header-image-container">
                 <img className="header-image" 
@@ -20,7 +20,7 @@ function Header() {
                     src={dogWalkSit} 
                     alt="drawing of woman asking her dog to sit" />
             </div>
-        </div>
+        </header>
     )
 }
 

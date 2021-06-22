@@ -133,11 +133,11 @@ function Calendar(props) {
   // functions that are called in the form
 
   return (
-    <div className="calendar">
+    <section className="calendar">
       <div className="month-year">{monthYear()}</div>
       <div className="days">{daysOfWeek()}</div>
       <div className="cells">{cells()}</div>
-    </div>
+    </section>
   );
 }
 

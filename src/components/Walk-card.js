@@ -12,9 +12,9 @@ function WalkCard(props) {
   return (
     <>
       {existingWalkData ? (
-        <div className="form">
+        <section className="form-container">
           <form>
-            <div className="sub-header"> Walk Details </div>
+            <h2> Walk Details </h2>
             <br />
             <label className="form-label" htmlFor="walkDate">
           Date
@@ -40,13 +40,13 @@ function WalkCard(props) {
             <span className="form-label">Walk Notes</span>
             <span className="existing-input-box"> {existingWalkData.notes}</span>
             <br />
-            <input
+            <button
               className="button"
               type="button"
               value="Delete Walk"
               key={props.onHasChanged}
               onClick={(e) => handleDelete(e)}
-            />
+            >Delete Walk</button>
             <button
               className="button"
               type="button"
@@ -54,7 +54,7 @@ function WalkCard(props) {
               onClick={() => props.onEdit()}
             >Edit Walk</button>
           </form>
-        </div>
+        </section>
       ) : null}
     </>
   );

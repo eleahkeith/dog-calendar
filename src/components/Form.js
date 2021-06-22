@@ -64,9 +64,9 @@ function Form(props) {
   }
 
   return (
-    <div className="form">
+    <section className="form-container">
       <form>
-        <div className="sub-header"> Record Walk </div>
+        <h2> Record Walk </h2>
         <label className="form-label" htmlFor="walkDate">
           Date
         </label>
@@ -151,7 +151,7 @@ function Form(props) {
           onClick={(e) => resetForm()}
         >Reset Form</button>
       </form>
-    </div>
+    </section>
   );
 }
 
