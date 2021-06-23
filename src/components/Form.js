@@ -38,7 +38,6 @@ function Form(props) {
       storeWalkData();
       props.onHasChanged();
       props.onEdit();
-      console.log(isValid);
     } else {
       window.alert(
         "One or more items you entered is invalid. Please check your form and submit again."
@@ -67,11 +66,10 @@ function Form(props) {
     <section className="form-container">
       <form>
         <h2> Record Walk </h2>
-        <label className="form-label" htmlFor="walkDate">
+        <label htmlFor="walkDate">
           Date
         </label>
         <input
-          className="form-input"
           type="date"
           value={props.currentIsoDate}
           id="walkDate"
@@ -79,11 +77,10 @@ function Form(props) {
           readOnly
         />
         <br />
-        <label className="form-label" htmlFor="walkTime">
+        <label htmlFor="walkTime">
           Walk Time
         </label>
         <select
-          className="form-input"
           name="walkTime"
           id="walkTime"
           onChange={(e) => setWalkTime(e.target.value)}
@@ -97,11 +94,10 @@ function Form(props) {
           <option value="Evening">Evening</option>
         </select>
         <br />
-        <label className="form-label" htmlFor="walkLength">
+        <label htmlFor="walkLength">
           Length of Walk (minutes)
         </label>
         <input
-          className="form-input"
           type="number"
           value={walkLength}
           onChange={(e) => setWalkLength(e.target.value)}
@@ -109,30 +105,28 @@ function Form(props) {
           name="walkLength"
         />
         <br />
-        <label className="form-label" htmlFor="walkDogBehavior">
+        <label htmlFor="walkDogBehavior">
           Dog Behavior
         </label>
         <select
-          className="form-input"
           name="walkDogBehavior"
           id="walkDogBehavior"
           onChange={(e) => setWalkDogBehavior(e.target.value)}
           value={walkDogBehavior}
         >
-          <option className="form-input" hidden value=" ">
+          <option hidden value=" ">
             --select one--
           </option>
-          <option className="form-input" value="Excellent">Excellent</option>
-          <option className="form-input" value="Good">Good</option>
-          <option className="form-input" value="Fair">Fair</option>
-          <option className="form-input" value="Poor">Poor</option>
+          <option value="Excellent">Excellent</option>
+          <option value="Good">Good</option>
+          <option value="Fair">Fair</option>
+          <option value="Poor">Poor</option>
         </select>
         <br />
-        <label className="form-label" htmlFor="walkNotes">
+        <label htmlFor="walkNotes">
           Walk Notes
         </label>
         <textarea
-          className="form-input-box"
           id="walkNotes"
           name="walkNotes"
           value={walkNotes}
@@ -140,13 +134,11 @@ function Form(props) {
         ></textarea>
         <br />
         <button
-          className="button"
           type="button"
           key={props.onHasChanged}
           onClick={(e) => handleSubmit(e)}
         >Record Walk</button>
         <button
-          className="button"
           type="button"
           onClick={(e) => resetForm()}
         >Reset Form</button>

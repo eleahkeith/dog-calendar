@@ -33,7 +33,6 @@ function App() {
 
   const onDateClick = (day) => {
     setSelectedDate(toDate(day));
-    console.log(selectedDate);
   };
 
   const doesWalkExist = (day) => {

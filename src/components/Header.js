@@ -6,16 +6,16 @@ function Header() {
 
     return (
         <header>
-            <div className="header-text-container">
+            <div className="text-container">
                 <h1>Dog Walk Diary</h1>
-                <h2 className="h2-header">Track your dog's walks and behavior</h2>
+                <h2>Track your dog's walks and behavior</h2>
             </div>
-            <div className="header-image-container">
-                <img className="header-image" 
+            <div className="image-container">
+                <img 
                     id="phone" 
                     src={dogWalkPhone} 
                     alt="drawing of woman on her phone walking a dog" />
-                <img className="header-image" 
+                <img 
                     id="sit"
                     src={dogWalkSit} 
                     alt="drawing of woman asking her dog to sit" />
